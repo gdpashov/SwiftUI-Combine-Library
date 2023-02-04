@@ -8,17 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		C5E298AF298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298AE298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift */; };
-		C5E298B1298D8A7C0057FFF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298B0298D8A7C0057FFF9 /* ContentView.swift */; };
+		C5E298B1298D8A7C0057FFF9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298B0298D8A7C0057FFF9 /* MainView.swift */; };
 		C5E298B3298D8A960057FFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E298B2298D8A960057FFF9 /* Assets.xcassets */; };
 		C5E298B6298D8A960057FFF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E298B5298D8A960057FFF9 /* Preview Assets.xcassets */; };
+		C5E298BE298D8B5D0057FFF9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298BD298D8B5D0057FFF9 /* APIError.swift */; };
+		C5E298C0298D8BA60057FFF9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298BF298D8BA60057FFF9 /* APIService.swift */; };
+		C5E298C4298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5E298C2298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodeld */; };
+		C5E298C6298D8DF00057FFF9 /* OpenLibrarySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298C5298D8DF00057FFF9 /* OpenLibrarySearchResult.swift */; };
+		C5E298C9298D91000057FFF9 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298C8298D91000057FFF9 /* AppConfiguration.swift */; };
+		C5E298CB298D922F0057FFF9 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298CA298D922F0057FFF9 /* PersistenceController.swift */; };
+		C5E298CE298D94D40057FFF9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298CD298D94D40057FFF9 /* String+Extension.swift */; };
+		C5E298D2298D99100057FFF9 /* APIRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298D1298D99100057FFF9 /* APIRequestViewModel.swift */; };
+		C5E298D4298D99280057FFF9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298D3298D99280057FFF9 /* Requestable.swift */; };
+		C5E298D7298D9AFD0057FFF9 /* RequestableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298D6298D9AFD0057FFF9 /* RequestableView.swift */; };
+		C5E298D9298D9B420057FFF9 /* HList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298D8298D9B420057FFF9 /* HList.swift */; };
+		C5E298DB298D9CAB0057FFF9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298DA298D9CAB0057FFF9 /* DashboardView.swift */; };
+		C5E298DD298D9DCD0057FFF9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298DC298D9DCD0057FFF9 /* SearchView.swift */; };
+		C5E298DF298D9DED0057FFF9 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298DE298D9DED0057FFF9 /* FavouriteView.swift */; };
+		C5F105EC298DAACE00AD8DDF /* BookSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */; };
+		C5F105EE298DAB0700AD8DDF /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */; };
+		C5F105F0298DAD2900AD8DDF /* BookAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */; };
+		C5F105F2298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105F1298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C5E298AB298D8A7C0057FFF9 /* SwiftUICombineLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombineLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E298AE298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineLibraryApp.swift; sourceTree = "<group>"; };
-		C5E298B0298D8A7C0057FFF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5E298B0298D8A7C0057FFF9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C5E298B2298D8A960057FFF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5E298B5298D8A960057FFF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5E298BD298D8B5D0057FFF9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C5E298BF298D8BA60057FFF9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C5E298C3298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUICombineLibraryModel.xcdatamodel; sourceTree = "<group>"; };
+		C5E298C5298D8DF00057FFF9 /* OpenLibrarySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibrarySearchResult.swift; sourceTree = "<group>"; };
+		C5E298C8298D91000057FFF9 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		C5E298CA298D922F0057FFF9 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C5E298CD298D94D40057FFF9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C5E298D1298D99100057FFF9 /* APIRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestViewModel.swift; sourceTree = "<group>"; };
+		C5E298D3298D99280057FFF9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		C5E298D6298D9AFD0057FFF9 /* RequestableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestableView.swift; sourceTree = "<group>"; };
+		C5E298D8298D9B420057FFF9 /* HList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HList.swift; sourceTree = "<group>"; };
+		C5E298DA298D9CAB0057FFF9 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C5E298DC298D9DCD0057FFF9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		C5E298DE298D9DED0057FFF9 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSimpleView.swift; sourceTree = "<group>"; };
+		C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAdvancedView.swift; sourceTree = "<group>"; };
+		C5F105F1298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceFavouriteBookViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +87,12 @@
 		C5E298AD298D8A7C0057FFF9 /* SwiftUICombineLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				C5E298AE298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift */,
-				C5E298B0298D8A7C0057FFF9 /* ContentView.swift */,
+				C5E298C7298D90EE0057FFF9 /* App */,
+				C5E298BC298D8B3F0057FFF9 /* API */,
+				C5E298C1298D8BDA0057FFF9 /* Models */,
+				C5E298CF298D970E0057FFF9 /* Views */,
+				C5E298D0298D98F80057FFF9 /* ViewModels */,
+				C5E298CC298D94A00057FFF9 /* Extensions */,
 				C5E298B2298D8A960057FFF9 /* Assets.xcassets */,
 				C5E298B4298D8A960057FFF9 /* Preview Content */,
 			);
@@ -65,6 +105,76 @@
 				C5E298B5298D8A960057FFF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5E298BC298D8B3F0057FFF9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298BD298D8B5D0057FFF9 /* APIError.swift */,
+				C5E298BF298D8BA60057FFF9 /* APIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C5E298C1298D8BDA0057FFF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298C2298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodeld */,
+				C5E298CA298D922F0057FFF9 /* PersistenceController.swift */,
+				C5E298C5298D8DF00057FFF9 /* OpenLibrarySearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5E298C7298D90EE0057FFF9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298AE298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift */,
+				C5E298C8298D91000057FFF9 /* AppConfiguration.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5E298CC298D94A00057FFF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298CD298D94D40057FFF9 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5E298CF298D970E0057FFF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298D5298D9AEF0057FFF9 /* Common */,
+				C5E298B0298D8A7C0057FFF9 /* MainView.swift */,
+				C5E298DA298D9CAB0057FFF9 /* DashboardView.swift */,
+				C5E298DC298D9DCD0057FFF9 /* SearchView.swift */,
+				C5E298DE298D9DED0057FFF9 /* FavouriteView.swift */,
+				C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */,
+				C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */,
+				C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5E298D0298D98F80057FFF9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298D3298D99280057FFF9 /* Requestable.swift */,
+				C5E298D1298D99100057FFF9 /* APIRequestViewModel.swift */,
+				C5F105F1298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C5E298D5298D9AEF0057FFF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298D6298D9AFD0057FFF9 /* RequestableView.swift */,
+				C5E298D8298D9B420057FFF9 /* HList.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +247,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E298B1298D8A7C0057FFF9 /* ContentView.swift in Sources */,
+				C5E298C6298D8DF00057FFF9 /* OpenLibrarySearchResult.swift in Sources */,
+				C5E298CE298D94D40057FFF9 /* String+Extension.swift in Sources */,
+				C5E298B1298D8A7C0057FFF9 /* MainView.swift in Sources */,
+				C5E298DB298D9CAB0057FFF9 /* DashboardView.swift in Sources */,
+				C5F105EE298DAB0700AD8DDF /* BookDetailView.swift in Sources */,
+				C5F105F2298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift in Sources */,
 				C5E298AF298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift in Sources */,
+				C5E298C4298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodeld in Sources */,
+				C5E298C0298D8BA60057FFF9 /* APIService.swift in Sources */,
+				C5E298C9298D91000057FFF9 /* AppConfiguration.swift in Sources */,
+				C5E298D2298D99100057FFF9 /* APIRequestViewModel.swift in Sources */,
+				C5E298D7298D9AFD0057FFF9 /* RequestableView.swift in Sources */,
+				C5E298DD298D9DCD0057FFF9 /* SearchView.swift in Sources */,
+				C5E298BE298D8B5D0057FFF9 /* APIError.swift in Sources */,
+				C5E298D9298D9B420057FFF9 /* HList.swift in Sources */,
+				C5E298D4298D99280057FFF9 /* Requestable.swift in Sources */,
+				C5E298DF298D9DED0057FFF9 /* FavouriteView.swift in Sources */,
+				C5E298CB298D922F0057FFF9 /* PersistenceController.swift in Sources */,
+				C5F105F0298DAD2900AD8DDF /* BookAdvancedView.swift in Sources */,
+				C5F105EC298DAACE00AD8DDF /* BookSimpleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +465,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5E298C2298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5E298C3298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodel */,
+			);
+			currentVersion = C5E298C3298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodel */;
+			path = SwiftUICombineLibraryModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C5E298A3298D8A7B0057FFF9 /* Project object */;
 }
