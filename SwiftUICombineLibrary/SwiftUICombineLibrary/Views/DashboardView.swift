@@ -9,31 +9,33 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        ScrollView(.vertical) {
-            VStack {
-                Text("Trending Books")
-                    .font(.title2)
-                
-                DashboardBooksView(urlString: AppConfiguration.default.openLibraryTrendingUrlString)
-                
-                Spacer()
-                Spacer()
-                
-                Text("Classic Books")
-                    .font(.title2)
-                
-                DashboardBooksView(urlString: AppConfiguration.default.openLibraryClassicUrlString)
-                
-                Spacer()
-                Spacer()
-                
-                Text("Travel Books")
-                    .font(.title2)
-                
-                DashboardBooksView(urlString: AppConfiguration.default.openLibraryTravelUrlString)
-                
+        NavigationView {
+            ScrollView(.vertical) {
+                VStack {
+                    Text("Trending Books")
+                        .font(.title2)
+                    
+                    DashboardBooksView(urlString: AppConfiguration.default.openLibraryTrendingUrlString)
+                    
+                    Spacer()
+                    Spacer()
+                    
+                    Text("Classic Books")
+                        .font(.title2)
+                    
+                    DashboardBooksView(urlString: AppConfiguration.default.openLibraryClassicUrlString)
+                    
+                    Spacer()
+                    Spacer()
+                    
+                    Text("Travel Books")
+                        .font(.title2)
+                    
+                    DashboardBooksView(urlString: AppConfiguration.default.openLibraryTravelUrlString)
+                    
+                }
+                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity)
         }
     }
 }

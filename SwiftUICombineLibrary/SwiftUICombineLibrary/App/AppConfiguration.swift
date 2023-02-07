@@ -18,7 +18,7 @@ class AppConfiguration {
     
     var openLibrarySearchUrlString = "https://openlibrary.org/search.json?q=%@"
     
+    var openLibraryBookPropertiesUrlString = "https://openlibrary.org%@.json"
+    
     var openLibraryMediumCoverImageUrlString = "https://covers.openlibrary.org/b/olid/%@-M.jpg"
-    
-    
 }

@@ -12,12 +12,13 @@ struct SearchView: View {
     fileprivate var booksRequestViewModel = APIRequestViewModel(urlString: AppConfiguration.default.openLibrarySearchUrlString, destinationType: OpenLibrarySearchResult.self, isSearching: true)
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             RequestableView(requestable: booksRequestViewModel) {
                 if let books = booksRequestViewModel.result?.books {
                     if !books.isEmpty {
                         List(books) { book in
                             BookAdvancedView(book: book)
+                                .buttonStyle(.plain)
                         }
                     } else {
                         Text("No books")

@@ -6,10 +6,24 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct FavouriteView: View {
+    @FetchRequest(
+        sortDescriptors: []
+    ) var favouriteBooks: FetchedResults<FavouriteBook>
+    
     var body: some View {
-        Text("Hello, FavouriteView!")
+        NavigationView {
+            List(favouriteBooks) { favouriteBook in
+                if let jsonData = favouriteBook.jsonContent, let book = try? OpenLibrarySearchResultBook(jsonData: jsonData) {
+                    BookAdvancedView(book: book)
+                        .buttonStyle(.plain)
+                } else {
+                    Text("Wrong data for \(favouriteBook.key ?? "")")
+                }
+            }
+        }
     }
 }
 

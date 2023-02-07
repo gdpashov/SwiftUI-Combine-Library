@@ -21,8 +21,8 @@ struct OpenLibrarySearchResult: Codable {
         case openLibrarySearchResultNumFound = "num_found"
     }
     
-    init(data: Data) throws {
-        self = try JSONDecoder().decode(OpenLibrarySearchResult.self, from: data)
+    init(jsonData: Data) throws {
+        self = try JSONDecoder().decode(OpenLibrarySearchResult.self, from: jsonData)
     }
 }
 
@@ -54,8 +54,12 @@ struct OpenLibrarySearchResultBook: Codable {
         case subject
     }
     
-    init(data: Data) throws {
-        self = try JSONDecoder().decode(OpenLibrarySearchResultBook.self, from: data)
+    init(jsonData: Data) throws {
+        self = try JSONDecoder().decode(OpenLibrarySearchResultBook.self, from: jsonData)
+    }
+    
+    func toJSONData() throws -> Data {
+        return try JSONEncoder().encode(self)
     }
 }
 
@@ -73,4 +77,41 @@ extension OpenLibrarySearchResultBook: Identifiable {
     var id: String {
         key ?? UUID().uuidString
     }
+}
+
+// MARK: - OpenLibraryBookProperties
+
+struct OpenLibraryBookProperties: Codable {
+    let description: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case description
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        do {
+            self.description = try container.decode(String.self, forKey: .description)
+        } catch DecodingError.keyNotFound(_, _) {
+            self.description = nil
+        } catch DecodingError.typeMismatch {
+            let typeValue = try container.decode(OpenLibraryTypeValue<String>.self, forKey: .description)
+            self.description = typeValue.value
+        }
+    }
+    
+    init(jsonData: Data) throws {
+        self = try JSONDecoder().decode(OpenLibraryBookProperties.self, from: jsonData)
+    }
+    
+    func toJSONData() throws -> Data {
+        return try JSONEncoder().encode(self)
+    }
+}
+
+// MARK: - OpenLibraryTypeValue
+
+struct OpenLibraryTypeValue<V: Codable>: Codable {
+    let type: String?
+    let value: V
 }

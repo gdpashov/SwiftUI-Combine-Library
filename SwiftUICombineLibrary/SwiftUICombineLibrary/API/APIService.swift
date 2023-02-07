@@ -58,7 +58,7 @@ class APIService {
                         let decoder = JSONDecoder()
                         return try decoder.decode(destinationType, from: data)
                     } catch {
-                        throw APIError.decodingError(error)
+                        throw APIError.decodingError(data, error)
                     }
                 }
             }

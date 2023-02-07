@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5B7C70029927F37007F523E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7C6FF29927F37007F523E /* ImageView.swift */; };
+		C5B7C70229927F70007F523E /* IsFavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7C70129927F70007F523E /* IsFavouriteView.swift */; };
 		C5E298AF298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298AE298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift */; };
 		C5E298B1298D8A7C0057FFF9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E298B0298D8A7C0057FFF9 /* MainView.swift */; };
 		C5E298B3298D8A960057FFF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E298B2298D8A960057FFF9 /* Assets.xcassets */; };
@@ -28,10 +30,11 @@
 		C5F105EC298DAACE00AD8DDF /* BookSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */; };
 		C5F105EE298DAB0700AD8DDF /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */; };
 		C5F105F0298DAD2900AD8DDF /* BookAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */; };
-		C5F105F2298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F105F1298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5B7C6FF29927F37007F523E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		C5B7C70129927F70007F523E /* IsFavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFavouriteView.swift; sourceTree = "<group>"; };
 		C5E298AB298D8A7C0057FFF9 /* SwiftUICombineLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICombineLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E298AE298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICombineLibraryApp.swift; sourceTree = "<group>"; };
 		C5E298B0298D8A7C0057FFF9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSimpleView.swift; sourceTree = "<group>"; };
 		C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAdvancedView.swift; sourceTree = "<group>"; };
-		C5F105F1298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceFavouriteBookViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5B7C6FE29927EEF007F523E /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */,
+				C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */,
+				C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */,
+				C5B7C70129927F70007F523E /* IsFavouriteView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		C5B7C7032992B83C007F523E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5E298B2298D8A960057FFF9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C5E298A2298D8A7B0057FFF9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +114,7 @@
 				C5E298CF298D970E0057FFF9 /* Views */,
 				C5E298D0298D98F80057FFF9 /* ViewModels */,
 				C5E298CC298D94A00057FFF9 /* Extensions */,
-				C5E298B2298D8A960057FFF9 /* Assets.xcassets */,
+				C5B7C7032992B83C007F523E /* Resources */,
 				C5E298B4298D8A960057FFF9 /* Preview Content */,
 			);
 			path = SwiftUICombineLibrary;
@@ -147,13 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				C5E298D5298D9AEF0057FFF9 /* Common */,
+				C5B7C6FE29927EEF007F523E /* Book */,
 				C5E298B0298D8A7C0057FFF9 /* MainView.swift */,
 				C5E298DA298D9CAB0057FFF9 /* DashboardView.swift */,
 				C5E298DC298D9DCD0057FFF9 /* SearchView.swift */,
 				C5E298DE298D9DED0057FFF9 /* FavouriteView.swift */,
-				C5F105EB298DAACE00AD8DDF /* BookSimpleView.swift */,
-				C5F105EF298DAD2900AD8DDF /* BookAdvancedView.swift */,
-				C5F105ED298DAB0700AD8DDF /* BookDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,7 +182,6 @@
 			children = (
 				C5E298D3298D99280057FFF9 /* Requestable.swift */,
 				C5E298D1298D99100057FFF9 /* APIRequestViewModel.swift */,
-				C5F105F1298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,6 +191,7 @@
 			children = (
 				C5E298D6298D9AFD0057FFF9 /* RequestableView.swift */,
 				C5E298D8298D9B420057FFF9 /* HList.swift */,
+				C5B7C6FF29927F37007F523E /* ImageView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -251,14 +270,15 @@
 				C5E298CE298D94D40057FFF9 /* String+Extension.swift in Sources */,
 				C5E298B1298D8A7C0057FFF9 /* MainView.swift in Sources */,
 				C5E298DB298D9CAB0057FFF9 /* DashboardView.swift in Sources */,
+				C5B7C70229927F70007F523E /* IsFavouriteView.swift in Sources */,
 				C5F105EE298DAB0700AD8DDF /* BookDetailView.swift in Sources */,
-				C5F105F2298DAFFB00AD8DDF /* PersistanceFavouriteBookViewModel.swift in Sources */,
 				C5E298AF298D8A7C0057FFF9 /* SwiftUICombineLibraryApp.swift in Sources */,
 				C5E298C4298D8C280057FFF9 /* SwiftUICombineLibraryModel.xcdatamodeld in Sources */,
 				C5E298C0298D8BA60057FFF9 /* APIService.swift in Sources */,
 				C5E298C9298D91000057FFF9 /* AppConfiguration.swift in Sources */,
 				C5E298D2298D99100057FFF9 /* APIRequestViewModel.swift in Sources */,
 				C5E298D7298D9AFD0057FFF9 /* RequestableView.swift in Sources */,
+				C5B7C70029927F37007F523E /* ImageView.swift in Sources */,
 				C5E298DD298D9DCD0057FFF9 /* SearchView.swift in Sources */,
 				C5E298BE298D8B5D0057FFF9 /* APIError.swift in Sources */,
 				C5E298D9298D9B420057FFF9 /* HList.swift in Sources */,

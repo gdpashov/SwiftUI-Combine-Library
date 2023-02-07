@@ -21,7 +21,7 @@ enum APIError: LocalizedError {
     case validationError(String)
     
     /// The server sent data in an unexpected format
-    case decodingError(Error)
+    case decodingError(Data, Error)
     
     /// General server-side error. If `retryAfter` is set, the client can send the same request after the given time.
     case serverError(statusCode: Int, reason: String? = nil, retryAfter: String? = nil)
@@ -36,8 +36,8 @@ enum APIError: LocalizedError {
             return "Invalid response"
         case .validationError(let reason):
             return "Validation Error: \(reason)"
-        case .decodingError(let error):
-            return "The server returned data in an unexpected format. Error: \(error)"
+        case .decodingError(let data, let error):
+            return "The server returned data in an unexpected format. Error: \(error) \nData: \(String(decoding: data, as: UTF8.self))"
         case .serverError(let statusCode, let reason, let retryAfter):
             return "Server error with code \(statusCode), reason: \(reason ?? "no reason given"), retry after: \(retryAfter ?? "no retry after provided")"
         }
