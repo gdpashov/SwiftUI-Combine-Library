@@ -37,7 +37,7 @@ The main views are:
 
 > Uses Combine framework.
 
-Creates a publisher that requests an API service, validates the response, and decodes the result JSON data into a specified object.
+Creates a publisher that requests an API service, validates the response, and decodes the result JSON data into a specified object type.
 
 Returns `AnyPublisher<T, Error>` where:
 
@@ -79,7 +79,7 @@ class APIRequestViewModel<T: Decodable>: ObservableObject, Requestable {
 
 > Uses SwiftUI framework.
 
-Creates a horizontal list with a preferred item width. The real item is calculated in such a way that the last item to be shown in half (to indicate that there are more items) and width to be as closer to the preferred one as possible.
+Creates a horizontal list with a preferred item width. The real item is calculated in such a way that the last item to be shown in half (to indicate that there are more items) and the width to be as closer to the preferred one as possible.
 
 
 ### `Views`/`Book`/`BookSimpleView` and `BookAdvancedView`
@@ -92,7 +92,7 @@ Create a simple/advanced view for the book as navigation link to `BookDetailView
 struct BookSimpleView: View {
     var book: OpenLibrarySearchResultBook
     
-    /// Requests cover image. A progress indicator is shown while is running.
+    /// Requests cover image. A progress indicator is shown while running.
     @StateObject
     fileprivate var imageRequestViewModel: APIRequestViewModel<Data>
     

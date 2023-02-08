@@ -10,7 +10,7 @@ import SwiftUI
 struct BookAdvancedView: View {
     var book: OpenLibrarySearchResultBook
     
-    /// Requests cover image. A progress indicator is shown while is running.
+    /// Requests cover image. A progress indicator is shown while running.
     @StateObject
     fileprivate var imageRequestViewModel: APIRequestViewModel<Data>
     
