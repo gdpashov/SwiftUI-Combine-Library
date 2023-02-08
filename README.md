@@ -45,20 +45,47 @@ Returns `AnyPublisher<T, Error>` where:
 
 - `Error` is the error that may arise during execution.
 
-2. `ViewModels`/`APIRequestViewModel`
+### `ViewModels`/`APIRequestViewModel`
 
-    dddd
+> Uses Combine framework.
+
+Creates a subscriber to `APIService` publisher.
+
 
 
 ```Swift
-<!DOCTYPE html>
-<html>
-    <head>
-        <mate charest="utf-8" />
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-    </body>
-</html>
+class APIRequestViewModel<T: Decodable>: ObservableObject, Requestable {
+    ...
+    
+    /// Result of APIService invocation. `T` is either `Data` to return the raw data or `Defined Type` to apply JSON transformation to the returned data. The object models of the returned Open Library JSON data are specified in `OpenLibrarySearchResult`.
+    @Published private(set) var result: T?
+    
+    /// Error that may arise during execution.
+    @Published private(set) var error: Error?
+    
+    /// Indicates whether it is running or not. To be used in progress indicators.
+    @Published private(set) var isRequesting: Bool = false
+    
+    ...
+    
+    /// Creates a subscriber to `APIService` publisher. On receiving data: the returned data is set into `result`, property `error` holds the error if execution has failed.
+    init(urlString: String, destinationType: T.Type, isSearching: Bool = false) {
+        ...
+    }
+    ...    
+}
+    
+```
+
+### 
+
+
+```Swift
+class APIRequestViewModel<T: Decodable>: ObservableObject, Requestable {
+    @Published var searchTerm: String = ""
+    
+    @Published private(set) var result: T?
+    @Published private(set) var error: Error?
+    @Published private(set) var isRequesting: Bool = false
+    
 ```
