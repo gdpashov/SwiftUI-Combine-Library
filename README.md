@@ -35,19 +35,19 @@ The main views are:
 
 1. `API`/`APIService`
 
-> Uses Combine
+    > Uses Combine framework.
 
-Creates a publisher that requests an API service, validates the response, and decodes the result JSON data into a specified object.
+    Creates a publisher that requests an API service, validates the response, and decodes the result JSON data into a specified object.
 
-Returns `AnyPublisher<T, Error>` where:
+    Returns `AnyPublisher<T, Error>` where:
 
-- `T` is either `Data` to return the raw data or `Defined Type` to apply JSON transformation to the returned data. The object models of the returned Open Library JSON data are specified in `Models`/`OpenLibrarySearchResult`.
+    - `T` is either `Data` to return the raw data or `Defined Type` to apply JSON transformation to the returned data. The object models of the returned Open Library JSON data are specified in `Models`/`OpenLibrarySearchResult`.
 
-- `Error` is the error that may arise during execution.
+    - `Error` is the error that may arise during execution.
 
 2. `ViewModels`/`APIRequestViewModel`
 
-
+    dddd
 
 
 ```Swift
