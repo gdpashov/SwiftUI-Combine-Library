@@ -33,10 +33,22 @@ The main views are:
 
 ## App Structure
 
-`API`/`APIService`
+1. `API`/`APIService`
 
-Creates a publisher that requests an API service, validates the response, and decodes the result JSON data into specified object.
-Returns `AnyPublisher<T, Error>` where `T` is either `Data` to return raw data or `Defined Type` to aplly JSON transformation of returned data.
+> Uses Combine
+
+Creates a publisher that requests an API service, validates the response, and decodes the result JSON data into a specified object.
+
+Returns `AnyPublisher<T, Error>` where:
+
+- `T` is either `Data` to return the raw data or `Defined Type` to apply JSON transformation to the returned data. The object models of the returned Open Library JSON data are specified in `Models`/`OpenLibrarySearchResult`.
+
+- `Error` is the error that may arise during execution.
+
+2. `ViewModels`/`APIRequestViewModel`
+
+
+
 
 ```Swift
 <!DOCTYPE html>
