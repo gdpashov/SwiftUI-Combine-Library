@@ -10,9 +10,11 @@ import SwiftUI
 struct BookAdvancedView: View {
     var book: OpenLibrarySearchResultBook
     
+    /// Requests cover image. A progress indicator is shown while is running.
     @StateObject
     fileprivate var imageRequestViewModel: APIRequestViewModel<Data>
     
+    /// Fetches the record for the book key if it exists in `FavouriteBook` Core Data entity.
     @FetchRequest
     fileprivate var fetchedFavouriteBooks: FetchedResults<FavouriteBook>
     

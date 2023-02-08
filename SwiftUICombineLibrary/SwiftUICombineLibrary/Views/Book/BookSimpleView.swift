@@ -10,9 +10,11 @@ import SwiftUI
 struct BookSimpleView: View {
     var book: OpenLibrarySearchResultBook
     
+    /// Requests cover image. A progress indicator is shown while is running.
     @StateObject
     fileprivate var imageRequestViewModel: APIRequestViewModel<Data>
     
+    /// Fetches the record for the book key if it exists in `FavouriteBook` Core Data entity.
     @FetchRequest
     fileprivate var fetchedFavouriteBooks: FetchedResults<FavouriteBook>
     
@@ -20,6 +22,7 @@ struct BookSimpleView: View {
         self.book = book
         
         _imageRequestViewModel = StateObject(wrappedValue: APIRequestViewModel(urlString: book.mediumCoverImageUrlString, destinationType: Data.self))
+        // Initialize fetch request
         _fetchedFavouriteBooks = FetchRequest<FavouriteBook>(sortDescriptors: [], predicate: NSPredicate(format: "key == %@", book.key ?? ""))
     }
     

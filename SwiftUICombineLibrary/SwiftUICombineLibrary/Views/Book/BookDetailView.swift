@@ -10,11 +10,14 @@ import SwiftUI
 struct BookDetailView: View {
     var book: OpenLibrarySearchResultBook
     
+    /// Requests cover image. A progress indicator is shown while is running.
     @ObservedObject
     var imageRequestViewModel: APIRequestViewModel<Data>
     
+    /// Fetches the record for the book key if it exists in `FavouriteBook` Core Data entity.
     var fetchedFavouriteBooks: FetchedResults<FavouriteBook>
     
+    /// Requests book description.
     @StateObject
     fileprivate var bookPropertiesRequestViewModel: APIRequestViewModel<OpenLibraryBookProperties>
     
