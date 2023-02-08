@@ -8,7 +8,7 @@ This is an iOS mobile app for browsing Open Library catalog. The main goal is to
 
 The main views are:
 - Dashboard: Contains a couple of popular book categories presented as scrollable horizontal lists.
-  <img src="/Assets/Images/01_DashboardScreenShot.jpg" width="200"/>
+  <img src="./Assets/Images/01_DashboardScreenShot.jpg"/>
   > Browse the most popular book categories.
 
 - Search: Allows searching in Open Library's catalog by text.
